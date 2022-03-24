@@ -10,9 +10,10 @@ var countBinarySubstrings = function (s) {
 
   // loop past end of array, using s[s.length] (undefined) as a sentinel to trigger the s[i] !== char condition on the last group
   for (let i = 0; i <= s.length; i++) {
+    //when do we want to update curr & and compare it prev? whenever char changes
     if (s[i] !== char) {
       //why is total being calculated here?
-      //we only know actual currCount after a char was changed(we have it here as as the end a new currCount would be created)
+      //we only know actual currCount after a char was changed(we have it here as at the end a new currCount would be created), do this comparision when you know both previous & current fields are updated to their max before needing a change.
       total += Math.min(prevCount, currCount); //adding to total which is returned at end of func
 
       prevCount = currCount; //set prev to curr, then start new (val for) curr
