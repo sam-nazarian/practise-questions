@@ -8,28 +8,31 @@ var validWordAbbreviation = function (word, abbr) {
   let j = 0; //abbr pointer
   while (j < abbr.length) {
     if (/\d/.test(abbr[j])) {
-      //if char of abbr is number
+      //if curr char of abbr is number
 
-      console.log('number');
+      if (/\d/.test(abbr[j + 1])) {
+        //if curr & next elm of abbr are a number
+        const number = Number(abbr[j].toString() + abbr[j + 1].toString());
 
-      i += abbr[j];
-      //compare them then go to next iteration of while
-
-      if (word[i] !== abbr[j]) {
-        return false;
+        console.log(number);
+        i += number;
+        j += 2;
+        continue;
       }
 
-      j++;
-      i++;
+      console.log('BEFORE', word[i + 4], abbr[j]);
+      i += Number(abbr[j]);
 
+      console.log('AFTER', word[i]);
+
+      j++;
       continue;
     }
 
+    console.log(word[i], abbr[j]);
     if (word[i] !== abbr[j]) {
       return false;
     }
-
-    console.log('test');
 
     i++;
     j++;
