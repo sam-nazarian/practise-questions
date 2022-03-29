@@ -26,14 +26,32 @@ var reorderLogFiles = function (logs) {
   letterLog.sort(function (a, b) {
     function getRaw(string) {
       const firstWord = string.split(' ')[0];
-      // console.log(firstWord);
       const afterWordRemoval = string.replace(firstWord, '').trim();
-      // const x = string.replace(/^.{05}/g, '').trim(); //try to remove first word not first 5 letters
+
       // console.log(afterWordRemoval);
       return afterWordRemoval;
     }
 
-    return getRaw(a).localeCompare(getRaw(b));
+    const getRawComparison = getRaw(a).localeCompare(getRaw(b));
+    if (getRawComparison !== 0) {
+      return getRawComparison;
+    } else {
+      return a.localeCompare(b);
+    }
+
+    /*
+    //if a-b -1
+    if (getRaw(a) < getRaw(b)) {
+      return -1; //happends 1st
+    } else if (getRaw(a) > getRaw(b)) {
+      return 1; //happeneds 2nd
+    } else {
+      //do comparision with just a&b, don't use getRaw()
+      return a.localeCompare(b); //a happened first, then b
+    }
+    */
+
+    // return getRaw(a).localeCompare(getRaw(b));
   });
 
   const finalArr = [...letterLog, ...digitLog];
@@ -42,4 +60,4 @@ var reorderLogFiles = function (logs) {
   // console.log(letterLog);
 };
 
-console.log(reorderLogFiles(['dig1 8 1 5 1', 'let1 art can', 'dig2 3 6', 'let2 own kit dig', 'let3 art zero']));
+console.log(reorderLogFiles(['a1 9 2 3 1', 'g1 act car', 'zo4 4 7', 'ab1 off key dog', 'a8 act zoo', 'a2 act car']));
