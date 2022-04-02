@@ -24,7 +24,7 @@ console.log(factorial(1)); */
  *
  * @param {number} number
  */
-/* const factorial = function (n) {
+const factorial = function (n) {
   if (n != 0) {
     //a function call gives return value of that function
     return n * factorial(n - 1);
@@ -33,4 +33,4 @@ console.log(factorial(1)); */
   }
 };
 
-console.log(factorial(3)); */
+console.log(factorial(3));

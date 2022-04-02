@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="/var/folders/mj/w6qvtyp56cv91vcl_nsw4w6r0000gn/T/leetcode/editor/en/[344]Reverse String.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/mj/w6qvtyp56cv91vcl_nsw4w6r0000gn/T/leetcode/editor/en/doc/content/[344]Reverse String.md" />
+              <option name="frontendQuestionId" value="leetcode.com344" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/mj/w6qvtyp56cv91vcl_nsw4w6r0000gn/T/leetcode/editor/en/[344]Reverse String.js" />
+              <option name="titleSlug" value="reverse-string" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/mj/w6qvtyp56cv91vcl_nsw4w6r0000gn/T/leetcode/editor/en/[543]Diameter of Binary Tree.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/mj/w6qvtyp56cv91vcl_nsw4w6r0000gn/T/leetcode/editor/en/doc/content/[543]Diameter of Binary Tree.md" />
+              <option name="frontendQuestionId" value="leetcode.com543" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="/var/folders/mj/w6qvtyp56cv91vcl_nsw4w6r0000gn/T/leetcode/editor/en/[543]Diameter of Binary Tree.js" />
+              <option name="titleSlug" value="diameter-of-binary-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
