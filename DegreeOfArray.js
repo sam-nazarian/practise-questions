@@ -20,19 +20,17 @@ const findShortestSubArray = function(nums){
         count.set(nums[i], (count.has(nums[i]) ? count.get(nums[i]) : 0) + 1);
     }
 
-    console.log('leftMap:', left)
-    console.log('rightMap:', right)
-    console.log('countMap:', count)
+    // console.log('leftMap:', left)
+    // console.log('rightMap:', right)
+    // console.log('countMap:', count)
 
-
+    const degree = Math.max( ...count.values() );
     let shortestSubarray = Infinity;
+
     for(let i=0; i<nums.length; i++){
         //check their frequency
-        if( count.get(nums[i]) === Math.max( ...count.values() ) ){
-            console.log(nums[i])
-            shortestSubarray = Math.min(shortestSubarray,( left.get(nums[i]) + right.get(nums[i]) ) + 1);
-            console.log(left.get(nums[i]), right.get(nums[i]))
-            console.log('shortestSubArr: ', shortestSubarray)
+        if( count.get(nums[i]) ===  degree){
+            shortestSubarray = Math.min(shortestSubarray,( right.get(nums[i]) - left.get(nums[i]) ) + 1);
         }
     }
 
