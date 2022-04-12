@@ -17,7 +17,7 @@ var minStartValue = function (nums) {
 
       if (numsArr[i] <= 0) {
         startVal++;
-        continue;
+        break;
       }
 
       if (i === numsArr.length - 1) answerFound = true;
@@ -31,8 +31,17 @@ var minStartValue = function (nums) {
 
 console.log(minStartValue([-3, 2, -3, 4, 2]));
 
-
-
 //while loop practise
 
-const testFunctio
+// const testFunction = function () {
+//   let n = 0;
+//   while (n < 3) {
+//     for (let i = 0; i < 5; i++) {
+//       console.log('hello', i);
+//       break;
+//     }
+//     n++;
+//   }
+// };
+
+// testFunction();
