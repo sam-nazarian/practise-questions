@@ -65,7 +65,7 @@ const removeDuplicates = s => {
         if( ans === 0 || arr[i] !== arr[ans - 1] ) {
             arr[ans] = arr[i];
             ans++;
-        }else { //arr[i] === arr[ans]
+        }else { //arr[i] === arr[ans] since they're equal we wanna remove it
             --ans;
         }
 
@@ -73,7 +73,7 @@ const removeDuplicates = s => {
     return arr.slice(0, ans).join('');
 };
 
-console.log(removeDuplicates('abb'))
+console.log(removeDuplicates('abbdab'))
 
 // let n = 5
 // for(let i=0; i<n; i++){
