@@ -49,24 +49,40 @@ var lastStoneWeight = function(stones) {
  */
 const lastStoneWeight2 = function(stones){
 
-    stones.push('1')
-    stones.push('2')
-    stones.push('3')
-    stones.push('a')
-    stones.push('b')
-    stones.push('a')
-    stones.sort((a, b) => {
-        //REMEMBER TYPEOF DOES NOT HAVE A CAPITAL LETTER, SO NOT 'String', CORRECT  'string' , same thing with 'number'
-        if(typeof a === 'string') {
-            return 1;
-        }
-        // if(typeof b === 'string') return -1;
+    while(stones.length > 1) {
+        stones.sort((a, b) => {
+            //REMEMBER TYPEOF DOES NOT HAVE A CAPITAL LETTER, SO NOT 'String', CORRECT  'string' , same thing with 'number'
+            if (typeof a === 'string') return 1;
+            if (typeof b === 'string') return -1;
+            return a - b; //sort by asc
+        })
+        console.log(stones)
 
-        // return a-b;
-        return b-a;
-        //greater value should be put first
-    })
-    console.log(stones)
+        const x = stones.pop();
+        const y = stones.pop();
+        console.log('x', x, 'y', y)
+        let difference = Math.abs(x - y); //for difference you can absolute the val
+        if (difference !== 0) stones.push(difference)
+    }
+
+    return stones.join('') *1
 }
 
-lastStoneWeight2([10,4,2,10])
+// console.log(lastStoneWeight2([10,4,2,10]))
+
+
+
+var lastStoneWeight3 = function(stones) {
+    if(stones.length < 2) return stones;
+    stones.sort((a,b) => a-b);
+    let a = stones.pop();
+    let b = stones.pop();
+    const difference = Math.abs(a-b);
+    stones.push(difference)
+    // stones.push(Math.abs(a-b));
+
+    return lastStoneWeight3(stones);
+};
+
+console.log(lastStoneWeight3([10,4,2,10] ) )
+
