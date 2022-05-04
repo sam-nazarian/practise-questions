@@ -16,7 +16,9 @@ let res = -1; //deepestValue
 // res : Value of deepest node so far.
 // level : Level of root
 function find(root, level) {
-    if (root != null) {
+    // if (root != null) {
+
+    if(root === null) return
 
         console.log(`rootVal: ${root.data} \t level: ${level}`)
 
@@ -33,7 +35,7 @@ function find(root, level) {
         find(root.right, level);
 
         // console.log(`rootValAFTER: ${root.data} \t level: ${level}`)
-    }
+    // }
 }
 
 // Returns value of deepest node

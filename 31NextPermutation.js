@@ -321,17 +321,161 @@ const nextPermutation2 = function(nums) {
     console.log(nums)
 }
 
-console.log( nextPermutation2([2,3,1]) ) //[3,1,2]
+// console.log( nextPermutation2([2,3,1]) ) //[3,1,2]
 
 // console.log( nextPermutation2([1,3,2]) ) //[2,1,3]
-
 // console.log( nextPermutation2([2,1,4,3]) )
 // console.log( nextPermutation2([1,2,3]) )
 // console.log( nextPermutation2([3,2,1]) ) //[1,2,3]
 
 
+/**
+ * works but has time limit error
+ * @param {number[]} nums
+ * @return {void}
+ */
+const nextPermutation3 = function(nums) {
+
+    let changeP;
+    for(let i=nums.length-2; i>=0; i--){
+        if(nums[i] < nums[i+1]) {
+            changeP = i;
+            break;
+        }
+    }
+
+    //find justLargerVal number after changeP
+    let justLargerP = changeP+1;
+    let justLargerVal = nums[changeP+1];
+    for(let i=changeP+1; i<nums.length; i++){
+        if(nums[i] > nums[changeP]){
+            //nums[i]>changeP but nums[i]<JustLargeVal
+            if (nums[i] > justLargerVal) continue;
+
+            justLargerP = i;
+            justLargerVal = nums[i];
+        }
+    }
+
+    console.log(nums[justLargerP])
+    console.log(nums[changeP])
+
+    //switch  changeP & smallestP
+    const temp = nums[justLargerP];
+    nums[justLargerP] = nums[changeP]
+    nums[changeP] = temp;
+
+    // console.log(nums)
+
+    //sort after changeP
+    const part1 = nums.slice(0, changeP+1);
+    const part2 = nums.slice(changeP+1, nums.length);
+    part2.reverse();
+
+    // console.log('change P', changeP)
+    // console.log(part1, part2)
+
+    const finalArr = part1.concat(part2);
+
+    for(let i=0; i<nums.length; i++){
+        nums[i] = finalArr[i];
+    }
+
+    console.log(nums)
+}
+
+// console.log( nextPermutation3([2,3,1]) ) //[3,1,2]
 
 
+
+const nextPermutation4 = function(nums) {
+
+    for(let i = nums.length-2; i >= 0; i--) {
+        if(nums[i] < nums[i+1]) {
+            const large = nextLarge(i);
+            swap(i, large);
+            reverse(i+1);
+            console.log(nums)
+            return;
+        }
+    }
+
+    // If there is no next permutation reverse the arr
+    nums.reverse()
+
+    function swap(i, j) {
+        [nums[i], nums[j]] = [nums[j], nums[i]];
+    }
+
+    function reverse(idx) {
+        let start = idx, end = nums.length-1;
+
+        while(start < end) {
+            swap(start, end);
+            start++;
+            end--;
+        }
+    }
+
+    function nextLarge(idx) {
+        for(let i = nums.length-1; i > idx; i--) {
+            if(nums[i] > nums[idx]) return i;
+        }
+    }
+};
+// nextPermutation4([1,2,3])
+
+
+
+const nextPermutation5 = function(nums){
+
+    //instead of creating a var do straight what you wanna do with that number
+    for(let i=nums.length-2; i>=0; i--){
+        if(nums[i] < nums[i+1]){
+            const largeIdx = justLarger(i);
+            swap(i,largeIdx);
+            reverse(i+1)
+            console.log(nums)
+            return;
+        }
+
+        //instead could add it below the for loop
+        // if(i === 0) {
+        //     reverse(0);
+        // }
+    }
+
+    reverse(0)
+    console.log(nums)
+
+    function reverse(idx){
+        let i = idx;
+        let j = nums.length-1;
+
+        while(i<j){
+            swap(i,j); //swapping nums[i] & nums[j]
+            i++;
+            j--;
+        }
+    }
+
+    function swap(i, j){
+        const temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+
+    //function names can be long but keep var names short
+    function justLarger(idx){
+        for(let i=nums.length-1; i>idx; i--){
+            if(nums[i] > nums[idx]) return i;
+        }
+    }
+
+}
+// nextPermutation5([2,1,4,3]) //2,3,1,4
+nextPermutation5([3,2,1]) //2,3,1,4
+//reverse part after 3
 
 
 
