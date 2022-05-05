@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b23fc87-3eb3-43b8-9843-a86cb3d7169d" name="Default Changelist" comment="k">
-      <change beforePath="$PROJECT_DIR$/31NextPermutation.js" beforeDir="false" afterPath="$PROJECT_DIR$/31NextPermutation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newTest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,17 +49,17 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Node.js.3sumTwo.js">
+  <component name="RunManager" selected="Node.js.BFSqueue2.js">
     <configuration name="3sumTwo.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/3sumTwo.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="BFS.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/BFS.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="BFSqueue.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/BFSqueue.js" working-dir="$PROJECT_DIR$">
+    <configuration name="BFSqueue2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/BFSqueue2.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="tree.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/tree.js" working-dir="$PROJECT_DIR$">
+    <configuration name="BFSqueue.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/BFSqueue.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="varPractise.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/varPractise.js" working-dir="$PROJECT_DIR$">
@@ -70,11 +67,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.BFSqueue2.js" />
         <item itemvalue="Node.js.3sumTwo.js" />
         <item itemvalue="Node.js.BFSqueue.js" />
         <item itemvalue="Node.js.BFS.js" />
         <item itemvalue="Node.js.varPractise.js" />
-        <item itemvalue="Node.js.tree.js" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +94,7 @@
       <workItem from="1650833948749" duration="2668000" />
       <workItem from="1650977915551" duration="69000" />
       <workItem from="1650978105431" duration="87136000" />
-      <workItem from="1651294771443" duration="78627000" />
+      <workItem from="1651294771443" duration="85773000" />
     </task>
     <servers />
   </component>
@@ -142,13 +139,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="NodeJSConfigurationType">
-        <watch expression="count" language="JavaScript" />
-        <watch expression="words[i][j]" language="JavaScript" />
-        <watch expression="words[i][j].length-1" language="JavaScript" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
