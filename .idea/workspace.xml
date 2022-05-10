@@ -40,38 +40,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ToolWindowleetcode.ShowToolbar": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ToolWindowleetcode.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Node.js.BFSqueue2.js">
-    <configuration name="3sumTwo.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/3sumTwo.js" working-dir="$PROJECT_DIR$">
+}</component>
+  <component name="RunManager" selected="Node.js.215.KthLargestElementinanArray.js">
+    <configuration name="146.LRUCache.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/146.LRUCache.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="BFS.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/BFS.js" working-dir="$PROJECT_DIR$">
+    <configuration name="215.KthLargestElementinanArray.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/215.KthLargestElementinanArray.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="BFSqueue2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/BFSqueue2.js" working-dir="$PROJECT_DIR$">
+    <configuration name="227.BasicCalculatorII.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/227.BasicCalculatorII.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="BFSqueue.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/BFSqueue.js" working-dir="$PROJECT_DIR$">
+    <configuration name="71.SimplifyPath.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/71.SimplifyPath.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="varPractise.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/varPractise.js" working-dir="$PROJECT_DIR$">
+    <configuration name="811.SubdomainVisitCount.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/811.SubdomainVisitCount.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.BFSqueue2.js" />
-        <item itemvalue="Node.js.3sumTwo.js" />
-        <item itemvalue="Node.js.BFSqueue.js" />
-        <item itemvalue="Node.js.BFS.js" />
-        <item itemvalue="Node.js.varPractise.js" />
+        <item itemvalue="Node.js.215.KthLargestElementinanArray.js" />
+        <item itemvalue="Node.js.811.SubdomainVisitCount.js" />
+        <item itemvalue="Node.js.227.BasicCalculatorII.js" />
+        <item itemvalue="Node.js.71.SimplifyPath.js" />
+        <item itemvalue="Node.js.146.LRUCache.js" />
       </list>
     </recent_temporary>
   </component>
@@ -94,7 +94,9 @@
       <workItem from="1650833948749" duration="2668000" />
       <workItem from="1650977915551" duration="69000" />
       <workItem from="1650978105431" duration="87136000" />
-      <workItem from="1651294771443" duration="85773000" />
+      <workItem from="1651294771443" duration="129609000" />
+      <workItem from="1651958966497" duration="124000" />
+      <workItem from="1651960208313" duration="55937000" />
     </task>
     <servers />
   </component>
@@ -128,14 +130,18 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/LeetcodeContest77.js</url>
           <line>21</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/BFS.js</url>
           <line>22</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/227.BasicCalculatorII.js</url>
+          <line>65</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
