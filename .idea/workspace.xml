@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b23fc87-3eb3-43b8-9843-a86cb3d7169d" name="Default Changelist" comment="k">
-      <change afterPath="$PROJECT_DIR$/java/src/comp/ChampagneTower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/799.ChampagneTower.js" beforeDir="false" afterPath="$PROJECT_DIR$/799.ChampagneTower.js" afterDir="false" />
     </list>
@@ -98,7 +97,7 @@
       <workItem from="1650978105431" duration="87136000" />
       <workItem from="1651294771443" duration="129609000" />
       <workItem from="1651958966497" duration="124000" />
-      <workItem from="1651960208313" duration="133889000" />
+      <workItem from="1651960208313" duration="137217000" />
     </task>
     <servers />
   </component>

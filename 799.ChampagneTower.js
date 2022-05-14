@@ -204,6 +204,7 @@
 
 
 /**
+ * WORKS
  * PRACTISE UPDATING MY-SOLUTION SO THAT i IS AT PARENT, AND WE GO TO CHILDREN, NOT FULLY DONE, GETS TO TEST 261/312
  * @param {number} poured
  * @param {number} query_row
@@ -211,27 +212,39 @@
  * @return {number}
  */
 var champagneTower = function(poured, query_row, query_glass) {
-    let arr = Array(102).fill( new Array(102).fill(0) );
-    arr[0][0] = [poured];
-
+    let arr = [];   //since rows & cols are equal in a pyramid, and the max row & col can be 100 as question says, then make the max 2d arr
+    for(let i=0; i<100; i++){
+        arr[i] = new Array(100).fill(0) //adding 102 cols for each row
+    }
+    arr[0][0] = poured;
     // console.log(arr)
 
-    // for(let i=0; i<query_row; i++){
-    //     // arr[i+1] = new Array(arr[i].length+1).fill(0); //make column for row below
-    //
-    //     for(let j=0; j<arr[i].length+1; j++){
-    //         let valOfChild = Math.max((arr[i][j]-1)/2, 0); //val can't be less than 0
-    //         valOfChild = valOfChild || 0;
-    //
-    //         arr[i+1][j] += valOfChild;
-    //         arr[i+1][j+1] += valOfChild;
-    //     }
-    // }
+    for(let i=0; i<query_row; i++){
+        // arr[i+1] = new Array(arr[i].length+1).fill(0); //make column for row below
+
+        for(let j=0; j<arr[i].length+1; j++){
+            let valOfChild = Math.max((arr[i][j]-1)/2, 0); //val can't be less than 0
+            // valOfChild = valOfChild || 0;
+
+            arr[i+1][j] += valOfChild;
+            arr[i+1][j+1] += valOfChild;
+        }
+    }
 
     console.log(arr)
+    return Math.min( arr[query_row][query_glass], 1)
 }
+// console.log(champagneTower(5,4,1))
+console.log(champagneTower(100000009,33,9))
+// console.log(champagneTower(5,4,1))
 
-console.log(champagneTower(5,4,1))
+
+//THIS(below) DOESN'T WORK , SETS '5' TO EVERY COLUMN, DOESN'T DETECT ROWS
+// let arr = new Array(5).fill( new Array(5).fill(0) );
+// arr[4][2] = '5'; //already an arr, so don't need to do arr[0][0] = [poured]
+
+//DO THIS INSTEAD, THIS WORKS
+
 //console.log(arr[i].length)
 
 
