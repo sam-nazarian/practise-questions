@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0b23fc87-3eb3-43b8-9843-a86cb3d7169d" name="Default Changelist" comment="k">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/198.HouseRobber.js" beforeDir="false" afterPath="$PROJECT_DIR$/198.HouseRobber.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,28 +50,28 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Node.js.Contest293.js">
+  <component name="RunManager" selected="Node.js.740.DeleteAndEarn.js">
     <configuration name="198.HouseRobber.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/198.HouseRobber.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="2249.CountLatticePointsInsideCircle.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/2249.CountLatticePointsInsideCircle.js" working-dir="$PROJECT_DIR$">
+    <configuration name="322.CoinChange.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/322.CoinChange.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="5299.FindK-BeautyNumber.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/5299.FindK-BeautyNumber.js" working-dir="$PROJECT_DIR$">
+    <configuration name="338.CountingBits.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/338.CountingBits.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="6068.MaximumWhiteTilesCovered.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/6068.MaximumWhiteTilesCovered.js" working-dir="$PROJECT_DIR$">
+    <configuration name="392.IsSubsequence.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/392.IsSubsequence.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="Contest293.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Contest293.js" working-dir="$PROJECT_DIR$">
+    <configuration name="740.DeleteAndEarn.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/740.DeleteAndEarn.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.Contest293.js" />
-        <item itemvalue="Node.js.6068.MaximumWhiteTilesCovered.js" />
-        <item itemvalue="Node.js.2249.CountLatticePointsInsideCircle.js" />
-        <item itemvalue="Node.js.5299.FindK-BeautyNumber.js" />
+        <item itemvalue="Node.js.740.DeleteAndEarn.js" />
+        <item itemvalue="Node.js.338.CountingBits.js" />
+        <item itemvalue="Node.js.322.CoinChange.js" />
+        <item itemvalue="Node.js.392.IsSubsequence.js" />
         <item itemvalue="Node.js.198.HouseRobber.js" />
       </list>
     </recent_temporary>
@@ -97,7 +98,8 @@
       <workItem from="1651294771443" duration="129609000" />
       <workItem from="1651958966497" duration="124000" />
       <workItem from="1651960208313" duration="137217000" />
-      <workItem from="1652488864673" duration="23292000" />
+      <workItem from="1652488864673" duration="54126000" />
+      <workItem from="1653027159095" duration="28381000" />
     </task>
     <servers />
   </component>
